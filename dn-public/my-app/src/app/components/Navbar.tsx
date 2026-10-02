@@ -17,7 +17,7 @@ const desktopLinks = [
   { label: "Admissions", href: "/admissions" },
   { label: "Faculty", href: "/faculty" },
   { label: "Facilities", href: "/facilities" },
-  { label: "Events & News", href: "/events" },
+  { label: "Events & News", href: "#" },
   { label: "Gallery", href: "/gallery" },
   { label: "Results", href: "/results" },
   { label: "Contact", href: "/contact" },
@@ -65,7 +65,7 @@ const tabletMoreLinks = [
   },
   {
     label: "Events & News",
-    href: "/events",
+    href: "#",
     icon: "📅",
   },
   {
@@ -122,7 +122,7 @@ const mobileMoreLinks = [
   },
   {
     label: "Events",
-    href: "/events",
+    href: "/#",
     icon: "📅",
   },
   {
@@ -621,10 +621,10 @@ export default function Navbar() {
           {/* EVENTS */}
 
           <MobileNavItem
-            href="/events"
+            href="/#"
             label="Events"
             icon="◫"
-            active={isActive("/events")}
+            active={isActive("/#")}
           />
 
           {/* MORE */}

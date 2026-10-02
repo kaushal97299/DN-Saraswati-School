@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import logo from "../logo/DN-LOGO.png";
 
 /* =========================================================
    DESKTOP LINKS
@@ -251,7 +252,7 @@ export default function Navbar() {
             {/* Logo Image */}
             <div className="flex h-10 w-10 shrink-0 items-center justify-center xl:h-11 xl:w-11">
               <Image
-                src="/DN-logo.png"
+                src={logo}
                 alt="DN Saraswati Sr. Sec. School Logo"
                 width={44}
                 height={44}
